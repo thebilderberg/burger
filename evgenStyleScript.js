@@ -11,7 +11,7 @@ function incButton(inc_b, inc_m) {
     });
 }
 
-incButton('.burgerButton', '.incognitoMenu');
+incButton('.burgerButton', '.burger');
 incButton('.cheezBurgerButton', '.cheezBurgerInfo');
 
 
