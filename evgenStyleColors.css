@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #4d1b1b;
+}
+
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #737740;
+    color: #000713;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    font-size: larger;
+    font-family: Arial;
+}
+
+
+.cunteiner {
+    padding: 100px;
+    height: 1000px;
+}
+
+
+.burger {
+    background-color: #24c724;
+    color: #e7eef0;
+    position: fixed;
+    top: 105px;
+    left: -180px;
+    width: 250px;
+    height: 80px;
+}
+.burgerIcon {
+    background-color: #b61313;
+    text-align: center;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 190px;
+    top: 12px;
+    border-radius: 10px;
+}
+.burgerInfo {
+    text-decoration: none;
+    color: #ffffff;
+}
+.burgerButton {
+    height: 50px;
+    width: 50px;
+}
+.incognitoMenu {
+    position: absolute;
+    background: beige;
+    left: 200px;
+    width: 200px;
+    height: 60px;
+}
+.burger:hover {
+    left: 5px;
+    /*transform: translate(5px,0);*/
+    transition: all 0.2s ease-in-out;
+}
+
+
+.cheezBurger {
+    position: fixed;
+    left: 90%;
+    height: 50px;
+    width: 50px;
+}
+.cheezBurgerInfo {
+    position: absolute;
+    left: -60px;
+    top: 60px;
+    background-color: #02cb9f;
+    height: 100px;
+    width: 200px;
+}
+.cheezBurgerButton {
+    height: 50px;
+    width: 50px;
+}
+
+
+.selector {
+    text-align: center;
+    background-color: #250656;
+    height: 1200px;
+}
+
+
+footer {
+    height: 100px;
+    background-color: #737740;
+}
