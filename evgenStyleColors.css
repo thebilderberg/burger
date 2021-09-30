@@ -62,12 +62,19 @@ header {
     left: 200px;
     width: 200px;
     height: 60px;
+    transform: scaleY(0);
+    transition: transform 400ms ease 0ms;
+}
+.incognitoMenu.hide {
+    transform: scaleY(1);
+    transition: transform 400ms ease 0ms;
 }
 .burger:hover {
     left: 5px;
     /*transform: translate(5px,0);*/
     transition: all 0.2s ease-in-out;
 }
+
 
 
 .cheezBurger {
@@ -83,6 +90,13 @@ header {
     background-color: #02cb9f;
     height: 100px;
     width: 200px;
+    transform: scaleY(0);
+    transition: transform 400ms ease 0ms;
+}
+.cheezBurgerInfo.hide {
+    transform: scaleY(1);
+    transition: transform 400ms ease 0ms;
+
 }
 .cheezBurgerButton {
     height: 50px;
