@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 
 body {
-    background-color: #4d1b1b;
+    background: #4d1b1b url(cyber.jpg);
 }
 
 
@@ -21,12 +22,55 @@ header {
     font-size: larger;
     font-family: Arial;
 }
+.title {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    font-family: "Bauhaus 93";
+    font-size: larger;
+}
+
+
+.cheezBurger {
+    position: fixed;
+    top: 25px;
+    left: 90%;
+    height: 50px;
+    width: 50px;
+}
+.cheezBurgerInfo {
+    position: absolute;
+    left: -60px;
+    top: 60px;
+    background-color: #02cb9f;
+    height: 100px;
+    width: 200px;
+    display: grid;
+    transform: scaleY(0);
+    transition: transform 400ms ease 0ms;
+}
+.cheezBurgerInfo.hide {
+    transform: scaleY(1);
+    transition: transform 400ms ease 0ms;
+}
+.cheezBurgerButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+.cheezBurgerButton:hover{
+    background-color: #010d01;
+    color: #e7eef0;
+    transition: all 0.7s ease-in-out;
+}
+
 
 
 .cunteiner {
     padding: 100px;
     height: 1000px;
 }
+
 
 
 .burger {
@@ -37,6 +81,12 @@ header {
     left: -180px;
     width: 250px;
     height: 80px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.burger.hide {
+    left: 5px;
+    /*transform: translate(5px,0);*/
     transition: all 0.2s ease-in-out;
 }
 .burgerIcon {
@@ -52,49 +102,30 @@ header {
 .burgerInfo {
     text-decoration: none;
     color: #ffffff;
+    padding: 11px 0px 0px 10px;
+}
+.burgerInfoButton {
+    width: 150px;
+    height: 50px;
+    font-size: xx-large;
 }
 .burgerButton {
     height: 50px;
     width: 50px;
+    border-radius: 5px;
 }
-.burger.hide {
-    left: 5px;
-    /*transform: translate(5px,0);*/
-    transition: all 0.2s ease-in-out;
-}
-
-
-
-.cheezBurger {
-    position: fixed;
-    left: 90%;
-    height: 50px;
-    width: 50px;
-}
-.cheezBurgerInfo {
-    position: absolute;
-    left: -60px;
-    top: 60px;
-    background-color: #02cb9f;
-    height: 100px;
-    width: 200px;
-    transform: scaleY(0);
-    transition: transform 400ms ease 0ms;
-}
-.cheezBurgerInfo.hide {
-    transform: scaleY(1);
-    transition: transform 400ms ease 0ms;
-}
-.cheezBurgerButton {
-    height: 50px;
-    width: 50px;
+.burgerButton:hover {
+    background-color: #010d01;
+    color: #e7eef0;
+    transition: all 0.7s ease-in-out;
 }
 
 
 .selector {
     text-align: center;
-    background-color: #250656;
     height: 1200px;
+    color: #e7eef0;
+    background-color: rgba(37, 6, 86, 0.66);
 }
 
 
