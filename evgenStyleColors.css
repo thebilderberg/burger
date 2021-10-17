@@ -34,13 +34,13 @@ header {
 .cheezBurger {
     position: fixed;
     top: 25px;
-    left: 90%;
+    left: 80%;
     height: 50px;
     width: 50px;
 }
 .cheezBurgerInfo {
     position: absolute;
-    left: -70px;
+    left: -76px;
     top: 60px;
     text-align: center;
     /*background-color: #0d1eaa;*/
