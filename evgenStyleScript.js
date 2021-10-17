@@ -21,8 +21,10 @@ function cofe(info_b) {
 
         let enterMeat = prompt(`${name}, какое мясо ты любишь?`);
         let enterWay = prompt(`${name}, холодное или горячее?`)
-        meat = enterMeat;
-        way = enterWay;
+        let meat = enterMeat;
+        let way = enterWay;
+        let x = undefined;
+        let y = undefined;
 
 
         if (meat === 'Курица') {
@@ -40,7 +42,7 @@ function cofe(info_b) {
             y = 2;
         }
 
-        answer = x + y;
+        let answer = x + y;
         if (answer === 2) {
             alert(`${name}, для вас Куриный салат` + `\u{1F60D}`);
         }
