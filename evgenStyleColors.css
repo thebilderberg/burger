@@ -84,14 +84,14 @@ header {
 
 
 .burger {
-    background-color: #0d1eaa;
+    background-color: rgba(61, 79, 231, 0.25);
     color: #e7eef0;
     position: fixed;
     top: 105px;
     left: -180px;
     width: 250px;
     height: 80px;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: all 0.2s ease-in-out;
 }
 .burger.hide {
@@ -144,4 +144,6 @@ footer {
     height: 100px;
     background-color: #737740;
     justify-content: center;
+    font-family: "Courier";
+    text-decoration: overline;
 }
