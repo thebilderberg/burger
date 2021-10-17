@@ -40,11 +40,13 @@ header {
 }
 .cheezBurgerInfo {
     position: absolute;
-    left: -60px;
+    left: -70px;
     top: 60px;
-    background-color: #02cb9f;
+    text-align: center;
+    /*background-color: #0d1eaa;*/
     height: 100px;
     width: 200px;
+    border-radius: 5px;
     display: grid;
     transform: scaleY(0);
     transition: transform 400ms ease 0ms;
@@ -52,6 +54,13 @@ header {
 .cheezBurgerInfo.hide {
     transform: scaleY(1);
     transition: transform 400ms ease 0ms;
+}
+.cheezBurgerInfoHref {
+    color: #ffffff;
+}
+.cheezBurgerInfoHref:hover {
+    color: #b61313;
+    transition: all 0.7s ease-in-out;
 }
 .cheezBurgerButton {
     height: 50px;
@@ -66,6 +75,7 @@ header {
 
 
 
+
 .cunteiner {
     padding: 100px;
     height: 1000px;
@@ -74,7 +84,7 @@ header {
 
 
 .burger {
-    background-color: #24c724;
+    background-color: #0d1eaa;
     color: #e7eef0;
     position: fixed;
     top: 105px;
@@ -130,6 +140,8 @@ header {
 
 
 footer {
+    display: flex;
     height: 100px;
     background-color: #737740;
+    justify-content: center;
 }
