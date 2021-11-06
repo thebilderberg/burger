@@ -111,7 +111,10 @@ function footerOther (foo_b){
       } else {
          foot_but.style.cssText = 'background-color: #7f10db; transition: 0.5s ease-out';
       }
-  });
+      });
+      foot_but.addEventListener('mouseout', (event)=> {
+      foot_but.style.cssText = ``;
+      });
 }
 
 
