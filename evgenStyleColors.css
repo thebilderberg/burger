@@ -90,7 +90,7 @@ header {
     top: 105px;
     left: -180px;
     width: 250px;
-    height: 80px;
+    height: 80px;`
     border-radius: 20px;
     transition: all 0.2s ease-in-out;
 }
@@ -119,6 +119,11 @@ header {
     height: 50px;
     font-size: xx-large;
 }
+.burgerInfoButton:hover{
+    background-color: #010d01;
+    color: #e7eef0;
+    transition: all 0.7s ease-in-out;
+}
 .burgerButton {
     height: 50px;
     width: 50px;
@@ -142,8 +147,20 @@ header {
 footer {
     display: flex;
     height: 100px;
-    background-color: #737740;
-    justify-content: center;
+    background-color: rgb(115, 119, 64);
+    justify-content: space-around;
     font-family: "Courier";
-    text-decoration: overline;
+    /*text-decoration: overline;*/
+}
+.footerButton {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(156, 161, 77, 0.43);
+    border-radius: 10px;
+}
+.footerButton:hover {
+    background-color: #010d01;
+    color: #06850f;
+    font-family: "Courier";
+    font-size: larger;
 }

@@ -66,9 +66,32 @@ function cofe(info_b) {
     });
 }
 
+function footerClick(foo_b) {
+    let footerButton = document.querySelector(foo_b);
+    footerButton.addEventListener('click', ()=>{
+        let div = document.createElement('div');
+        div.className = 'alert';
+        div.innerHTML = '<div><button>click me</button></div>';
+        let container = document.querySelector('.selector');
+        container.append(div);
+    });
+}
+
+
+
+function footerMatrix (){
+    let foot_but = document.querySelector('.footerButton');
+    foot_but.addEventListener('mousemove', (event)=> {
+    foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;}
+    );
+}
+
+
 incButton('.burgerButton', '.burger');
 incButton('.cheezBurgerButton', '.cheezBurgerInfo');
 cofe('.burgerInfoButton');
+footerClick('.footerButton');
+footerMatrix();
 
 
 
