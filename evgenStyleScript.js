@@ -83,7 +83,10 @@ function footerMatrix (foo_b){
     let foot_but = document.querySelector(foo_b);
     foot_but.addEventListener('mousemove', (event)=> {
     foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;
-  });
+    });
+    foot_but.addEventListener('mouseout', (event)=> {
+    foot_but.innerHTML = `Enter`;
+    });
 }
 
 
