@@ -71,16 +71,16 @@ function footerClick(foo_b) {
     footerButton.addEventListener('click', ()=>{
         let div = document.createElement('div');
         div.className = 'alert';
-        div.innerHTML = '<div><button>click me</button></div>';
-        let container = document.querySelector('.selector');
-        container.append(div);
+        div.innerHTML = '<div style="text-align: center; position: fixed; top: 500px; left: 40%;"><input style="height: 100px; width: 300px;" type="password" name="pass" placeholder="password"><button style="height: 100px; width: 50px;">click</button></input></div>';
+        let container = document.querySelector('footer');
+        container.before(div);
     });
 }
 
 
 
-function footerMatrix (){
-    let foot_but = document.querySelector('.footerButton');
+function footerMatrix (foo_b){
+    let foot_but = document.querySelector(foo_b);
     foot_but.addEventListener('mousemove', (event)=> {
     foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;}
     );
@@ -91,7 +91,7 @@ incButton('.burgerButton', '.burger');
 incButton('.cheezBurgerButton', '.cheezBurgerInfo');
 cofe('.burgerInfoButton');
 footerClick('.footerButton');
-footerMatrix();
+footerMatrix('.footerButton');
 
 
 

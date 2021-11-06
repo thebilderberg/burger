@@ -90,7 +90,7 @@ header {
     top: 105px;
     left: -180px;
     width: 250px;
-    height: 80px;`
+    height: 80px;
     border-radius: 20px;
     transition: all 0.2s ease-in-out;
 }
@@ -112,7 +112,7 @@ header {
 .burgerInfo {
     text-decoration: none;
     color: #ffffff;
-    padding: 11px 0px 0px 10px;
+    padding: 11px 0 0 10px;
 }
 .burgerInfoButton {
     width: 150px;
