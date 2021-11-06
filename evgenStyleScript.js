@@ -82,9 +82,36 @@ function footerClick(foo_b) {
 function footerMatrix (foo_b){
     let foot_but = document.querySelector(foo_b);
     foot_but.addEventListener('mousemove', (event)=> {
-    foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;}
-    );
+    foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;
+  });
 }
+
+
+
+function footerOther (foo_b){
+    let foot_but = document.querySelector(foo_b);
+    foot_but.addEventListener('mousemove', (event)=> {
+    if (event.clientX <= 20) {
+        foot_but.style.cssText = 'background-color: red; transition: 0.5s ease-out';
+     } else if (event.clientX <= 30) {
+        foot_but.style.cssText = 'background-color: green; transition: 0.5s ease-out';
+     } else if (event.clientX <= 40) {
+        foot_but.style.cssText = 'background-color: blue; transition: 0.5s ease-out';
+     } else if (event.clientX <= 60) {
+        foot_but.style.cssText = 'background-color: yellow; transition: 0.5s ease-out';
+     } else if (event.clientX <= 200) {
+         foot_but.style.cssText = 'background-color: orange; transition: 0.5s ease-out';
+      } else if (event.clientX <= 220) {
+         foot_but.style.cssText = 'background-color: #e33262; transition: 0.5s ease-out';
+      } else if (event.clientX <= 230) {
+         foot_but.style.cssText = 'background-color: #51df40; transition: 0.5s ease-out';
+      } else {
+         foot_but.style.cssText = 'background-color: #7f10db; transition: 0.5s ease-out';
+      }
+  });
+}
+
+
 
 
 incButton('.burgerButton', '.burger');
@@ -92,6 +119,4 @@ incButton('.cheezBurgerButton', '.cheezBurgerInfo');
 cofe('.burgerInfoButton');
 footerClick('.footerButton');
 footerMatrix('.footerButton');
-
-
-
+footerOther('.burgerButton');
