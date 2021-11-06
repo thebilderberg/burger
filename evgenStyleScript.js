@@ -71,7 +71,7 @@ function footerClick(foo_b) {
     footerButton.addEventListener('click', ()=>{
         let div = document.createElement('div');
         div.className = 'alert';
-        div.innerHTML = '<div style="text-align: center; position: fixed; top: 500px; left: 40%;"><input style="height: 100px; width: 300px;" type="password" name="pass" placeholder="password"><button style="height: 100px; width: 50px;">click</button></input></div>';
+        div.innerHTML = '<div style="text-align: center; position: absolute; top: 1090px; left: 40%;"><input style="height: 100px; width: 300px;" type="password" name="pass" placeholder="password"><button style="height: 100px; width: 50px;">click</button></input></div>';
         let container = document.querySelector('footer');
         container.before(div);
     });
