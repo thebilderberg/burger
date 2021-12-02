@@ -21,59 +21,82 @@ function cofe(info_b) {
 
         let enterMeat = prompt(`${name}, какое мясо ты любишь?`);
         let enterWay = prompt(`${name}, холодное или горячее?`)
-        let meat = enterMeat;
-        let way = enterWay;
+        let meat = enterMeat.toLowerCase();
+        let way = enterWay.toLowerCase();
         let x = undefined;
         let y = undefined;
 
 
-        if (meat === 'Курица') {
+        if (meat === 'курица' || meat === 'курицу' || meat === 'кура' || meat === 'курятина' || meat === 'куру' || meat === 'курятину') {
             x = 1;
-        } if (meat === 'Свинина') {
+        } else if (meat === 'свинина' || meat === 'свинину' || meat === 'кабан' || meat === 'кабана' || meat === 'свинка' || meat === 'поросенок') {
             x = 4;
-        } if (meat === 'Говядина'){
+        } else if (meat === 'говядина' || meat === 'говядину' || meat === 'бычок' || meat === 'бычка' || meat === 'корова' || meat === 'корову'){
             x = 6;
+        } else {
+            x = 200;
         }
 
 
-        if (way === 'Холодное') {
+        if (way === 'холодное') {
             y = 1;
-        } if (way === 'Горячее') {
+        } else if (way === 'горячее') {
             y = 2;
+        } else {
+            y = 200;
         }
 
         let answer = x + y;
         if (answer === 2) {
             alert(`${name}, для вас Куриный салат` + `\u{1F60D}`);
+            let div = document.createElement('div');
+            div.className = 'alert';
+            div.innerHTML = '<img src="achievemen.png" alt="" width="180px">';
+            let container = document.querySelector('.footerAchieveMake');
+            container.before(div);
         }
         else if (answer === 3){
             alert(`${name}, для вас Куриный суп` + `\u{1F60D}`);
+            let div = document.createElement('div');
+            div.className = 'alert';
+            div.innerHTML = '<img src="achievemen.png" alt="" width="180px">';
+            let container = document.querySelector('.footerAchieveMake');
+            container.before(div);
         }
         else if (answer === 5){
             alert(`${name}, для вас салат из свинины` + `\u{1F60D}`);
+            let div = document.createElement('div');
+            div.className = 'alert';
+            div.innerHTML = '<img src="achievemen.png" alt="" width="180px">';
+            let container = document.querySelector('.footerAchieveMake');
+            container.before(div);
         }
         else if (answer === 6){
             alert(`${name}, для вас мясо по-французски` + `\u{1F60D}`);
+            let div = document.createElement('div');
+            div.className = 'alert';
+            div.innerHTML = '<img src="achievemen.png" alt="" width="180px">';
+            let container = document.querySelector('.footerAchieveMake');
+            container.before(div);
         }
         else if (answer === 7){
             alert(`${name}, для вас язык на тарелке` + `\u{1F60D}`);
+            let div = document.createElement('div');
+            div.className = 'alert';
+            div.innerHTML = '<img src="achievemen.png" alt="" width="180px">';
+            let container = document.querySelector('.footerAchieveMake');
+            container.before(div);
         }
         else if (answer === 8){
             alert(`${name}, для вас горячее ассорти из говядины` + `\u{1F60D}`);
+            let div = document.createElement('div');
+            div.className = 'alert';
+            div.innerHTML = '<img src="achievemen.png" alt="" width="180px">';
+            let container = document.querySelector('.footerAchieveMake');
+            container.before(div);
         } else {
             alert(`${name}, такого нет в меню ` + `\u{1F60D}`);
         }
-    });
-}
-
-function footerClick(foo_b) {
-    let footerButton = document.querySelector(foo_b);
-    footerButton.addEventListener('click', ()=>{
-        let div = document.createElement('div');
-        div.className = 'alert';
-        div.innerHTML = '<div style="text-align: center; position: absolute; top: 1090px; left: 20px;"><input style="height: 100px; width: 300px;" type="password" name="pass" placeholder="password"><button style="height: 100px; width: 50px;">Enter</button></input></div>';
-        let container = document.querySelector('footer');
-        container.before(div);
     });
 }
 
@@ -82,10 +105,10 @@ function footerClick(foo_b) {
 function footerMatrix (foo_b){
     let foot_but = document.querySelector(foo_b);
     foot_but.addEventListener('mousemove', (event)=> {
-    foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;
+        foot_but.innerHTML = `${event.clientX} <br><br> ${event.clientY}`;
     });
     foot_but.addEventListener('mouseout', (event)=> {
-    foot_but.innerHTML = `Enter`;
+        foot_but.innerHTML = `Enter`;
     });
 }
 
@@ -94,27 +117,27 @@ function footerMatrix (foo_b){
 function footerOther (foo_b){
     let foot_but = document.querySelector(foo_b);
     foot_but.addEventListener('mousemove', (event)=> {
-    if (event.clientX <= 20) {
-        foot_but.style.cssText = 'background-color: red; transition: 0.5s ease-out';
-     } else if (event.clientX <= 30) {
-        foot_but.style.cssText = 'background-color: green; transition: 0.5s ease-out';
-     } else if (event.clientX <= 40) {
-        foot_but.style.cssText = 'background-color: blue; transition: 0.5s ease-out';
-     } else if (event.clientX <= 60) {
-        foot_but.style.cssText = 'background-color: yellow; transition: 0.5s ease-out';
-     } else if (event.clientX <= 200) {
-         foot_but.style.cssText = 'background-color: orange; transition: 0.5s ease-out';
-      } else if (event.clientX <= 220) {
-         foot_but.style.cssText = 'background-color: #e33262; transition: 0.5s ease-out';
-      } else if (event.clientX <= 230) {
-         foot_but.style.cssText = 'background-color: #51df40; transition: 0.5s ease-out';
-      } else {
-         foot_but.style.cssText = 'background-color: #7f10db; transition: 0.5s ease-out';
-      }
-      });
-      foot_but.addEventListener('mouseout', (event)=> {
-      foot_but.style.cssText = ``;
-      });
+        if (event.clientX <= 20) {
+            foot_but.style.cssText = 'background-color: red; transition: 0.5s ease-out';
+         } else if (event.clientX <= 30) {
+            foot_but.style.cssText = 'background-color: green; transition: 0.5s ease-out';
+         } else if (event.clientX <= 40) {
+            foot_but.style.cssText = 'background-color: blue; transition: 0.5s ease-out';
+         } else if (event.clientX <= 60) {
+            foot_but.style.cssText = 'background-color: yellow; transition: 0.5s ease-out';
+         } else if (event.clientX <= 200) {
+             foot_but.style.cssText = 'background-color: orange; transition: 0.5s ease-out';
+         } else if (event.clientX <= 220) {
+             foot_but.style.cssText = 'background-color: #e33262; transition: 0.5s ease-out';
+         } else if (event.clientX <= 230) {
+             foot_but.style.cssText = 'background-color: #51df40; transition: 0.5s ease-out';
+         } else {
+             foot_but.style.cssText = 'background-color: #7f10db; transition: 0.5s ease-out';
+         }
+    });
+    foot_but.addEventListener('mouseout', (event)=> {
+        foot_but.style.cssText = ``;
+    });
 }
 
 
@@ -123,6 +146,6 @@ function footerOther (foo_b){
 incButton('.burgerButton', '.burger');
 incButton('.cheezBurgerButton', '.cheezBurgerInfo');
 cofe('.burgerInfoButton');
-footerClick('.footerButton');
+// footerClick('.footerButton');
 footerMatrix('.footerButton');
 footerOther('.burgerButton');

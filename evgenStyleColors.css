@@ -6,14 +6,14 @@
 
 
 body {
-    background: #4d1b1b url(cyber.jpg);
+    background: #1e1e1e url(cyber.jpg);
 }
 
 
 header {
     height: 100px;
     width: 100%;
-    background-color: #737740;
+    background-color: #9605e7ab;
     color: #000713;
     position: fixed;
     left: 0;
@@ -66,6 +66,7 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .cheezBurgerButton:hover{
     background-color: #010d01;
@@ -77,8 +78,7 @@ header {
 
 
 .cunteiner {
-    padding: 100px;
-    height: 1000px;
+    padding: 100px 0px 0px 0px;
 }
 
 
@@ -118,6 +118,7 @@ header {
     width: 150px;
     height: 50px;
     font-size: xx-large;
+    cursor: pointer;
 }
 .burgerInfoButton:hover{
     background-color: #010d01;
@@ -128,6 +129,7 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .burgerButton:hover {
     background-color: #010d01;
@@ -145,18 +147,29 @@ header {
 
 
 footer {
-    display: flex;
-    height: 100px;
-    background-color: rgb(115, 119, 64);
+    background-color: #9605e7ab;
     justify-content: space-around;
     font-family: "Courier";
     /*text-decoration: overline;*/
+}
+.footerAchieve {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+.footerDisplay{
+    display: flex;
+    justify-content: space-around;
+}
+.signature {
+    line-height: 100px;
 }
 .footerButton {
     height: 100px;
     width: 100px;
     background-color: rgba(156, 161, 77, 0.43);
     border-radius: 10px;
+    cursor: pointer;
 }
 .footerButton:hover {
     background-color: #010d01;
@@ -164,3 +177,4 @@ footer {
     font-family: "Courier";
     font-size: larger;
 }
+
