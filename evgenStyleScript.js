@@ -27,11 +27,16 @@ function cofe(info_b) {
         let y = undefined;
 
 
-        if (meat === 'курица' || meat === 'курицу' || meat === 'кура' || meat === 'курятина' || meat === 'куру' || meat === 'курятину') {
+        let chickenArray = ['курица', 'курицу', 'кура', 'курятина', 'куру', 'курятину'];
+        let porkArray = ['свинина', 'свинину', 'кабан', 'кабана', 'свинка', 'поросенок'];
+        let beefArray = ['говядина', 'говядину', 'бычок', 'бычка', 'корова', 'корову']
+
+
+        if (chickenArray.includes(meat)) {
             x = 1;
-        } else if (meat === 'свинина' || meat === 'свинину' || meat === 'кабан' || meat === 'кабана' || meat === 'свинка' || meat === 'поросенок') {
+        } else if (porkArray.includes(meat)) {
             x = 4;
-        } else if (meat === 'говядина' || meat === 'говядину' || meat === 'бычок' || meat === 'бычка' || meat === 'корова' || meat === 'корову'){
+        } else if (beefArray.includes(meat)){
             x = 6;
         } else {
             x = 200;
